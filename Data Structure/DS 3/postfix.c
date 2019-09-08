@@ -39,6 +39,8 @@ char peek(stack *s){
 	else
 	return s->arr[s->top];
 }
+ //stack operation end
+ // priority checking here
 int priority(char ch){
 	switch(ch){
 		case '+': return 1;
@@ -52,11 +54,15 @@ int priority(char ch){
 		case ')': return 0;
 	}
 }
+
+//function to check tocken is an operater or not
 int isOperator(char ch){
 	if( ch=='+' || ch=='-' || ch=='%' || ch=='/' || ch=='*' || ch=='^')
 		return 1;
 	return 0;
 }
+
+// converting the string into postfix
 char* topostfix(char exp[]){
 	int i,j=0;
 	static char postfix[100];
