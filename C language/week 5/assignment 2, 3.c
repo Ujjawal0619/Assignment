@@ -1,3 +1,4 @@
+/*program to insert and delete an element in an array*/
 #include<stdio.h>
 
 void input(int *values, int n){
