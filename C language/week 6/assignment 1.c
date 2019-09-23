@@ -1,4 +1,5 @@
 /*Ascessing elements of array using pointer*/
+#include<stdio.h>
 
 int inputAndSum(int *arr, int n){
 	int i, sum=0;
@@ -9,7 +10,7 @@ int inputAndSum(int *arr, int n){
 	return sum;
 }
 
-void main(){
+int main(){
 	int arr[50], n, i;
 	printf("Enter number of elements:\n");
 	scanf("%d",&n);
